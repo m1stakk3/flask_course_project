@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  {% extends 'base.html' %}
+  {% block app_content %}
+    <form method="post">
+        <p>Высота: <input type="text" name="height"></p>
+        <p>Ширина: <input type="text" name="width"></p>
+        <button>Задать</button>
+    </form>
+    <a class="btn btn-primary" href="{{ url_for('live') }}">Создать жизнь</a>
+  {% endblock %}
+</body>
+</html>
